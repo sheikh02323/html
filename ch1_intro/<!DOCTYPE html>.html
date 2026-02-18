@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sfa.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    form input, form button {
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      cursor: pointer;
+      background-color: #7b00ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0000EE;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #aaa; /* horizontal line color */
+      margin: 40px 0;
+    }
+
+    /* NEW: Vertical two-column layout */
+    .container {
+      display: flex;
+      gap: 20px; /* space between columns */
+    }
+
+    .left, .right {
+      flex: 1; /* both columns equal width */
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    /* Vertical line */
+    .container::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <h1>Ku soo dhawoow boggeena SFA, kala soco xaaladaha Somalia</h1>
+      <p>Waxaan ku soo gudbin doonnaa xaaladaha masiibooyinka ka dhaca dalka, sida Abaaraha,</p>
+      <p>Fatahaadaha, cayayaanka beeraha cuna, iwm.</p>
+      <a href="https://www.facebook.com/profile.php?id=100057227247318">Ku dhufo Facebook-ga ururka SFA</a>
+      <img src="https://scontent.frtm1-3.fna.fbcdn.net/v/t39.30808-6/481295808_1138538474730383_2099762606130128545_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8nLGmyDORRsQ7kNvwENg9b9&_nc_oc=AdnhSUb4jimt5bgJxrU7c_EFcOqHvtB85K_Lte6LESs7wkMFD0u0JbXLlp_ha2Hhxdc&_nc_zt=23&_nc_ht=scontent.frtm1-3.fna&_nc_gid=nwn5sPu_m7A7RJs3I-Pv4A&oh=00_Afu57qAOHTcRuTOhHx1bMdhR0HU5JBWoRoTMpbi3GhVc2w&oe=69917AF6" alt="Sawir beeralayda Soomliyeede">
+
+      <h2>About the Organization</h2>
+      <p>Type: Non-profit, community-based organization.</p>
+      <p><strong>Vision:</strong> To create a resilient, sustainable agriculture in Somalia that ensures food security and economic growth.</p>
+      <p><strong>Mission:</strong> To empower Somali youth farmers.</p>
+    </div>
+
+    <div class="right">
+      <h3>Qodobada waxqabadka SFA waxaa kamid ah</h3>
+      <ul>
+        <li>Taageerida Beeralayda, sida in la baro wax soosaarka</li>
+        <li>In talooyin la siiyo</li>
+        <li>In dhalinyarada laga celiyo xag jirka</li>
+      </ul>
+
+      <h3>Maalmaha aan shaqayno waa</h3>
+      <ol>
+        <li>Sabti</li>
+        <li>Axad</li>
+        <li>Isniin</li>
+        <li>Talaado</li>
+        <li>Arbaco</li>
+      </ol>
+      <p>Maalmaha Khamiista iyo Jimcaha waa fasax.</p>
+
+      <h3>Fadlan nala soo xiriir:</h3>
+      <p>Haddii aad rabto caawinaad, fadlan noo reeb Magacaaga, Emailkaaga ama Telefoonkaaga.</p>
+
+      <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Magacaaga"><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Emailkaaga"><br>
+
+        <label>Contact number:</label><br>
+        <input type="text" placeholder="Telefoonkaaga"><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
