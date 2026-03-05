@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somali Farmers Association Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2b7a0b;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2b7a0b;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 7px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2b7a0b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #1f5a06;
+        }
+
+        details {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .inline {
+            width: auto;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somali Farmers Association Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>Full Name:<input type="text" name="name" required></label>
+            <label>Email:<input type="email" name="email" required></label>
+            <label>Password:<input type="password" name="password" required></label>
+            <label>Phone:<input type="tel" name="phone"></label>
+            <label>Date of Birth:<input type="date" name="dob"></label>
+            <label>Preferred Time:<input type="time" name="time"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Farm & Equipment</legend>
+            <label>Equipment:
+                <select name="equipment">
+                    <option value="tractor">Tractor</option>
+                    <option value="plough">Plough</option>
+                    <option value="sprayer">Sprayer</option>
+                    <option value="harvester">Harvester</option>
+                </select>
+            </label>
+
+            <label>Multiple Equipment:
+                <select name="multi[]" multiple>
+                    <option value="tractor">Tractor</option>
+                    <option value="plough">Plough</option>
+                    <option value="sprayer">Sprayer</option>
+                    <option value="harvester">Harvester</option>
+                </select>
+            </label>
+
+            <label>Farm Type:</label>
+            <input type="radio" name="farm_type" value="crop" class="inline"> Crop
+            <input type="radio" name="farm_type" value="livestock" class="inline"> Livestock
+
+            <label>Services:</label>
+            <input type="checkbox" name="services" value="training" class="inline"> Training
+            <input type="checkbox" name="services" value="consulting" class="inline"> Consulting
+
+            <label>Quantity:<input type="number" name="quantity" min="1" max="100"></label>
+            <label>Website:<input type="url" name="website"></label>
+            <label>Favorite Color:<input type="color" name="favcolor"></label>
+            <label>Bio:<textarea name="bio" rows="3"></textarea></label>
+            <label>Photo Upload:<input type="file" name="photo" accept="image/*"></label>
+        </fieldset>
+
+        <details>
+            <summary>Additional Info</summary>
+            <p>Optional farm details, notes, or comments.</p>
+        </details>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+
+</html>
